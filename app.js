@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     title: "Air Force",
-    price: 1109rs,
+    price: 1109,
     colors: [
       {
         code: "black",
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     title: "Air Jordan",
-    price: 2149rs,
+    price: 2149,
     colors: [
       {
         code: "lightgray",
@@ -35,7 +35,7 @@ const products = [
   {
     id: 3,
     title: "Blazer",
-    price: 1209rs,
+    price: 1209,
     colors: [
       {
         code: "lightgray",
@@ -50,7 +50,7 @@ const products = [
   {
     id: 4,
     title: "Crater",
-    price: 1209rs,
+    price: 1209,
     colors: [
       {
         code: "black",
@@ -65,7 +65,7 @@ const products = [
   {
     id: 5,
     title: "Hippie",
-    price: 1399rs,
+    price: 1399,
     colors: [
       {
         code: "gray",
@@ -159,7 +159,7 @@ menuItems.forEach((item, index) => {
 
     // Update DOM elements
     currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = `₹${choosenProduct.price}`; // Add currency symbol
+    currentProductPrice.textContent = `₹+{choosenProduct.price}`; // Add currency symbol
     currentProductImg.src = choosenProduct.colors[0].img;
 
     // Assign new colors
